@@ -51,7 +51,7 @@ namespace SFOT1.Pages
         }
 
 
-        protected async Task StudentSorting(string sortColumn)
+        protected async Task PlayerSorting(string sortColumn)
         {
 
                 _isAsc = !_isAsc;
