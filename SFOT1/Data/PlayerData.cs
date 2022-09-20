@@ -14,7 +14,7 @@ namespace SFOT1.Data
             cn.Open();
             cmd.CommandTimeout = 1200;
             cmd.Connection = cn;
-            cmd.CommandText = "AddSprocHere"; //Returns five fields that match the PlayerProp.cs class
+            cmd.CommandText = "ap_PlayerFlatStats_Get"; //Add sproc that returns five fields matching the PlayerProp.cs class
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add(new SqlParameter("@inClubID", clubId));
 
