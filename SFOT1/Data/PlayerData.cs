@@ -16,7 +16,7 @@ namespace SFOT1.Data
             cmd.Connection = cn;
             cmd.CommandText = "ap_PlayerFlatStats_Get"; //Add sproc that returns five fields matching the PlayerProp.cs class
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add(new SqlParameter("@inClubID", clubId));
+            //cmd.Parameters.Add(new SqlParameter("@inClubID", clubId));
 
             using SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);
